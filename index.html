@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Time 2.0v</title>
+  <link rel="stylesheet" href="src/style.css">
+  <script type="module" src="src/script.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <div class="left">
+      <div>
+        <span id="minutes">00</span><span>:</span><span id="seconds">00</span>
+      </div>
+      <div class="controls">
+        <button id="play" onclick="playTime()">
+          <i class="control fa-solid fa-play"></i>
+        </button>
+        <button id="stop" onclick="stopTime()">
+          <i class="control fa-solid fa-stop"></i>
+        </button>
+        <button id="plus"  onclick="addTime()">
+          <i class="control fa-solid fa-plus"></i>
+        </button>
+        <button id="minus" onclick="removeTime()">
+          <i class="control fa-solid fa-minus"></i>
+        </button>
+      </div>
+    </div>
+    <div class="right">
+      <button id="florest" ondblclick="playFlorest()">
+        <i  class="card fa-solid fa-tree"></i>
+      </button>
+      <button id="rain" ondblclick="playRain()">
+        <i class="card fa-solid fa-cloud-showers-heavy"></i>
+      </button>
+      <button id="coffeeShop" ondblclick="playShopCoffee()">
+        <i class="card fa-solid fa-store"></i>
+      </button>
+      <button id="fire" ondblclick="playFire()">
+        <i class="card fa-solid fa-fire"></i>
+      </button>
+    </div>
+  </main>
+</body>
+<script src="https://kit.fontawesome.com/ad384f2189.js" crossorigin="anonymous"></script>
+
+</html>
